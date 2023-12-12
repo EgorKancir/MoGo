@@ -3,147 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>MoGo</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="conteiner">
-            <div class="nav">
-                <div class="logo">
-                    <a href="#">
-                        <img src="./img/MoGo.png" alt="logo Mogo">
+            <div class="navigation">
+                <div class="navigation__logo">
+                    <a class="navigation__logo-link" href="#">
+                        <img class="navigation__logo-image" src="./img/MoGo.png" alt="logo Mogo">
                     </a>
                 </div>
-                <nav class="nav_nav">
-                    <ul class="ul">
-                        <li class="li"><a href="#">ABOUT</a></li>
-                        <li class="li"><a href="#">SERVICE</a></li>
-                        <li class="li"><a href="#">WORK</a></li>
-                        <li class="li"><a href="#">BLOG</a></li>
-                        <li class="li"><a href="#">CONTACT</a></li>
+                <nav class="navigation__console">
+                    <ul class="navigation__console-box">
+                        <li class="navigation__consol-element">
+                            <a href="navigation__element-link">ABOUT</a>
+                        </li>
+                        <li class="navigation__consol-element">
+                            <a href="navigation__element-link">SERVICE</a>
+                        </li>
+                        <li class="navigation__consol-element">
+                            <a href="navigation__element-link">WORK</a>
+                        </li>
+                        <li class="navigation__consol-element">
+                            <a href="navigation__element-link">BLOG</a>
+                        </li>
+                        <li class="navigation__consol-element">
+                            <a href="navigation__element-link">CONTACT</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="conteiner">
-            <div class="work">
-                <h1 class="one">We work with</h1>
-                <h2 class="two">Amazing Services</h2>
-            </div>
-            <div class="liner">
-                <div class="line"></div>
-            </div>
-        </div>
-        <div class="conteiner">
-            <div class="first_line">
-                <div class="box">
-                    <img class="img" src="./img/time.png" alt="Alarm clock">
-                    <h2 class="name">photography</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div class="box">
-                    <img class="img" src="./img/top.png" alt="Arrow">
-                    <h2 class="name">photography</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div class="box">
-                    <img class="img" src="./img/pc.png" alt="PC">
-                    <h2 class="name">photography</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, sed do eiusmod tempor.</p>
+        <section class="about-us">
+            <div class="conteiner">
+                <div class="about-us__content-box">
+                    <div class="about-us__text-box">
+                        <h1 class="about-us__title">We work with</h1>
+                        <h2 class="about-us__subtitle">Amazing Services</h2>
+                    </div>
+                    <div class="about-us__bottom-line"></div>
                 </div>
             </div>
-            <div class="last_line">
-                <div class="box">
-                    <img class="img" src="./img/sms.png" alt="Letter">
-                    <h2 class="name">photography</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, sed do eiusmod tempor.</p>
+        </section>
+        <section class="our-capabilties">
+            <div class="conteiner">
+                <div class="our-capabilties__content-box">
+                    <div class="our-capabilties__line-element">
+                        <div class="our-capabilties__element">
+                            <img class="our-capabilties__element-image" src="./img/time.png" alt="Alarm clock">
+                            <div class="our-capabilties__element-text-box">
+                                <h2 class="our-capabilties__element-title">photography</h2>
+                                <p class="our-capabilties__element-paragraf">
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-capabilties__element">
+                            <img class="our-capabilties__element-image" src="./img/top.png" alt="Arrow">
+                            <div class="our-capabilties__element-text-box">
+                                <h2 class="our-capabilties__element-title">photography</h2>
+                                <p class="our-capabilties__element-paragraf">
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-capabilties__element">
+                            <img class="our-capabilties__element-image" src="./img/pc.png" alt="PC">
+                            <div class="our-capabilties__element-text-box">
+                                <h2 class="our-capabilties__element-title">photography</h2>
+                                <p class="our-capabilties__element-paragraf">
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-capabilties__line-element">
+                        <div class="our-capabilties__element">
+                            <img class="our-capabilties__element-image" src="./img/sms.png" alt="Letter">
+                            <div class="our-capabilties__element-text-box">
+                                <h2 class="our-capabilties__element-title">photography</h2>
+                                <p class="our-capabilties__element-paragraf">
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-capabilties__element">
+                            <img class="our-capabilties__element-image" src="./img/home.png" alt="Home">
+                            <div class="our-capabilties__element-text-box">
+                                <h2 class="our-capabilties__element-title">photography</h2>
+                                <p class="our-capabilties__element-paragraf">
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-capabilties__element">
+                            <img class="our-capabilties__element-image" src="./img/phone.png" alt="Phone">
+                            <div class="our-capabilties__element-text-box">
+                                <h2 class="our-capabilties__element-title">photography</h2>
+                                <p class="our-capabilties__element-paragraf">
+                                    Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img class="img" src="./img/home.png" alt="Home">
-                    <h2 class="name">photography</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </section>
+        <section class="team-info">
+            <div class="conteiner">
+                <div class="team-info__content-box">
+                    <div class="team-info__text-group">
+                        <div class="team-info__text-box">
+                            <h1 class="team-info__title">Who we are</h1>
+                            <h2 class="team-info__subtitle">Meet our team</h2>
+                        </div>
+                        <div class="team-info__bottom-line"></div>
+                    </div>
+                    <p class="team-info__paragraf">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br>
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
                 </div>
-                <div class="box">
-                    <img class="img" src="./img/phone.png" alt="Phone">
-                    <h2 class="name">photography</h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </section>
+        <section class="worker-group">
+            <div class="conteiner">
+                <div class="worker-group__content-box">
+                    <div class="worker-group__worker-element">
+                        <img class="worker-group__image" src="./img/first-man_1.png" alt="Man">
+                        <div class="worker-group__text-box">
+                            <h2 class="worker-group__element-title">Matthew Dix</h2>
+                            <p class="worker-group__element-paragraf">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div class="worker-group__worker-element">
+                        <img class="worker-group__image" src="./img/second-man_1.png" alt="Man">
+                        <div class="worker-group__text-box">
+                            <h2 class="worker-group__element-title">Christopher Campbell</h2>
+                            <p class="worker-group__element-paragraf">Branding/UX design</p>
+                        </div>
+                    </div>
+                    <div class="worker-group__worker-element">
+                        <img class="worker-group__image" src="./img/third-man_1.png" alt="Man">
+                        <div class="worker-group__text-box">
+                            <h2 class="worker-group__element-title">Michael Fertig </h2>
+                            <p class="worker-group__element-paragraf">Developer</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="conteiner">
-            <div class="work">
-                <h1 class="one">Who we are</h1>
-                <h2 class="two">Meet our team</h2>
-            </div>
-            <div class="liner">
-                <div class="line"></div>
-            </div>
-        </div>
-        <div class="conteiner">
-            <div class="big_text">
-              <p class="text_big">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br>
-                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              </p>
-            </div>
-        </div>
-        <div class="conteiner">
-         <div class="man_ikon">
-            <div class="man">
-                <img class="man_img" src="./img/first-man_1.png" alt="Man">
-                <h2 class="man_h2">Matthew Dix</h2>
-                <p class="man_p">Graphic Design</p>
-            </div>
-            <div class="man">
-                <img class="man_img" src="./img/second-man_1.png" alt="Man">
-                <h2 class="man_h2">Christopher Campbell</h2>
-                <p class="man_p">Branding/UX design</p>
-            </div>
-            <div class="man">
-                <img class="man_img" src="./img/third-man_1.png" alt="Man">
-                <h2 class="man_h2">Michael Fertig </h2>
-                <p class="man_p">Developer</p>
-            </div>
-         </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
+        <hr class="footer__line">
         <div class="conteiner">
-            <div class="footer_box">
-            <h2 class="footer_text">© 2016 MoGo free PSD template by <var class="var">Laaqiq</var></h2>
-            <form>
-                <div class="input">
-                    <input type="email" name="email" placeholder="Your Email...">
-                    <input type="submit" name="submit" value="Subscribe">
-                </div>
-            </form>
+            <div class="footer__content-box">
+                <h2 class="footer__title">© 2016 MoGo free PSD template by <a class="footer__title-var" href="#">Laaqiq</a></h2>
+                <form class="footer__contact-box">
+                    <label class="footer__email-box" for="footer-email">
+                        <input class="footer__email-contact" type="email" name="email" placeholder="Your Email..." id="footer-email">
+                    </label>
+                    <button class="footer__sumbit-contact" type="submit" name="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
