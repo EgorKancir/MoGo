@@ -215,11 +215,28 @@ h1, h2, h3, h4, h5, h6, p, ul, li, input, button {
     gap: 45px;
 }
 .team-info__text-group {
+    width: 230px;
+    height: 176px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 36px;
+    position: relative;
+    overflow: hidden;
+}
+.team-info__text-group::before {
+    content: "";    
+    width: 60px;
+    height: 4px;
+    background: #F38181;
+    position: absolute;
+    bottom: 0px;
+    transform: translate(1100%);
+    transition: transform 250ms ease;
+}
+.team-info__text-group:hover:before {
+    transform: translate(0);
 }
 .team-info__text-box {
     display: flex;
@@ -244,12 +261,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, input, button {
     font-weight: 700;
     line-height: normal;
     font-variant: all-small-caps;
-}
-.team-info__bottom-line {
-    width: 60px;
-    height: 4px;
-    flex-shrink: 0;
-    background: #F38181;
 }
 .team-info__paragraf {
     color: #B6B6B6;
