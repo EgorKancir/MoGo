@@ -55,11 +55,21 @@ h1, h2, h3, h4, h5, h6, p, ul, li, input, button {
     font-weight: 400;
     line-height: normal;
     padding-bottom: 13px;
+    position: relative;
+    overflow: hidden;
 }
-.navigation__consol-element:hover {
-    color: #F38181;
-    border-bottom: solid 3px #F38181;
-    padding-bottom: 10px;
+.navigation__consol-element::before {
+    content: "";    
+    width: 100%;
+    height: 3px;
+    background: #F38181;
+    position: absolute;
+    bottom: 0px;
+    transform: translate(-120%);
+    transition: transform 250ms ease;
+}
+.navigation__consol-element:hover::before {
+    transform: translate(0);
 }
 .main {
     margin: 0;
@@ -79,11 +89,29 @@ h1, h2, h3, h4, h5, h6, p, ul, li, input, button {
     align-items: center;
 }
 .about-us__content-box {
+    width: 230px;
+    height: 176px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.about-us__content-box::before {
+    content: "";    
+    width: 60px;
+    height: 4px;
+    background: #F38181;
+    position: absolute;
+    bottom: 0px;
+    transform: translate(-1100%);
+    transition: transform 250ms ease;
+}
+.about-us__content-box:hover:before {
+    transform: translate(0);
 }
 .about-us__text-box {
     display: flex;
@@ -108,12 +136,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, input, button {
     font-weight: 700;
     line-height: normal;
     font-variant: all-small-caps;
-}
-.about-us__bottom-line {
-    width: 60px;
-    height: 4px;
-    flex-shrink: 0;
-    background: #F38181;
 }
 .our-capabilties {
     height: 253px;
@@ -261,6 +283,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li, input, button {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    position: relative;
+}
+.worker-group__worker-element:hover::before {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    content: "";
+    width: 380px;
+    height: 470px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, rgba(239, 139, 138, 0.80) 0%, rgba(229, 207, 130, 0.80) 100%);
+    transition: 0.4s;
 }
 .worker-group__image {
     width: 380px;
