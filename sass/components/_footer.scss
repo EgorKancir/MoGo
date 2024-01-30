@@ -1,0 +1,71 @@
+.footer {
+    margin: 0;
+    &__content-box {
+        @include flex(space-between, center);
+        padding: 22px 0 10px  0;
+        border-top: 1px solid $grey;
+    }
+    &__title {
+        color: $low-black;
+        text-align: center;
+        font-family: $main-fonts;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__title--var {
+        color: #F38181;
+        font-family: $main-fonts;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:hover {
+            color: #95E1D3;
+        }
+    }
+}
+.form {
+    @extend %position-center;
+    &__input-box {
+        @include flex(end, center);
+    }
+    &__input {
+        width: 210px;
+        height: 39px;
+        flex-shrink: 0;
+        border: 1px solid $grey;
+        outline: none;
+        color: $grey;
+        padding: 0px 10px 0px 10px;
+        text-align: start;
+        font-family: $text-fonts;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: normal;
+        @include flex(start, center);
+        :focus-visible {
+            border: 1px solid #95E1D3;
+            color: $low-black;
+        }
+    }
+    &__button {
+        padding: 12px 38px;
+        border: none;
+        background: #95E1D3;
+        color: #FFF;
+        text-align: center;
+        font-family: $main-fonts;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-variant: all-small-caps;
+        &:hover {
+            background-color: #637e79;
+            transition: 0.4s;
+        }
+    }
+}

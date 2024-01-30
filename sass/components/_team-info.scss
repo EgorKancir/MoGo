@@ -1,0 +1,18 @@
+.team-info {
+    margin: 0 auto;
+    padding: 50px 0 27px 0;
+    &__content-box {
+    @extend %position-center;
+    flex-direction: column;
+    gap: 45px;
+    }
+    &__paragraf {
+        color: $grey;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

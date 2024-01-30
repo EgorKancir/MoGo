@@ -1,0 +1,44 @@
+.header {
+    margin: 0 auto;
+    padding: 17px;
+    &__content-box {
+        @include flex(space-between, end);
+    }
+}
+.logo {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 12px;
+}
+.navigation {
+    @include flex(center, end);
+    padding-top: 15px;
+    &__list {
+        @include flex(center, end);
+        gap: 55px;
+    }
+    &__items {
+        color: $beazei-color;
+        font-family: $main-fonts;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-bottom: 13px;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: "";    
+            width: 100%;
+            height: 3px;
+            background: $pink-color-hover;
+            position: absolute;
+            bottom: 0px;
+            transform: translate(-120%);
+            transition: transform 250ms ease;
+        }
+        &:hover::before {
+            transform: translate(0);
+        }
+    }
+}
